@@ -8,7 +8,7 @@ function Form(props){
     useEffect(()=>{
         var tmp =[];
         props.fields.map((item,index) => {
-            tmp.push(<Input key = {index} id = {item.id} name = {item.name} />)
+            tmp.push(<Input key = {index} value={item.value} id = {item.id} name = {item.name} />)
         });
         setFields(tmp);
     },[]);

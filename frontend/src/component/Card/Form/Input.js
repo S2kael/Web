@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 
 function Input (props) {
     const [focus,setFocus] = useState(false);
-    const [input,setInput] = useState('');
+    const [input,setInput] = useState(props.value ? props.value : '');
     function handleOnFoucusFocus(){
         setFocus(true);
     }

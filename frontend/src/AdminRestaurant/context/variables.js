@@ -1,18 +1,4 @@
 const fields = {
-    OwnerRestaurant : [
-        {
-            id : "name",
-            name : "User Name"
-        },
-        {
-            id : "password",
-            name : "Password"
-        },
-        {
-            id : "comfirm_password",
-            name : "Comfirm Password"
-        }        
-    ],
     Dish : [
         {
             id : "name",
@@ -31,7 +17,25 @@ const fields = {
             name : "Cost"
         }   
     ],
-    UserProfile : [
+    EditDish : [
+        {
+            id : "name",
+            name : "Name"
+        },
+        {
+            id : "image",
+            name : "Image"
+        },
+        {
+            id : "describe",
+            name : "Describe"
+        },
+        {
+            id : "cost",
+            name : "Cost"
+        }   
+    ],
+    EditUserProfile : [
         {
             id : "name",
             name : "User Name"

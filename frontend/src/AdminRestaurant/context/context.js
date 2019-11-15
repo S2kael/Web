@@ -1,9 +1,10 @@
 import React from "react";
 import { useImmer } from "use-immer";
 import DishesPage from "../Dish/DishesPage";
-import EditProfilePage from "../EditProfile/EditProfilePage";
+import EditProfilePage from "../Edit/Profile/EditProfilePage";
 import CreateDish from "../CreateDish/CreateDish";
 import BookingPage from "../Booking/BookingPage";
+import EditDishPage from "../Edit/Dish/EditDishPage";
 
 
 const defaultState = {
@@ -11,23 +12,38 @@ const defaultState = {
         {
             id: "dish",
             title: "Dish",
+            layout: 'sidebar',
             component: DishesPage
         },
         {
             id: "book",
             title: "Booking",
+            layout: 'sidebar',
             component: BookingPage
         },
         {
             id: "dish",
             title: "Create Dish",
+            layout: 'sidebar',
             component: CreateDish
+        },
+        {
+            id: "editdish",
+            title: "Edit Dish",
+            component: EditDishPage
         },
         {
             id: "editprofile",
             title: "Edit Profile",
-            display: 'none',
             component: EditProfilePage
+        }
+    ],
+    DishVaules:[
+        {
+            Name: "Dakota Rice",
+            Image: "Niger",
+            Describe: "Oud-Turnhout",
+            Cost: "$36,738"
         }
     ],
     isLogin: false,
